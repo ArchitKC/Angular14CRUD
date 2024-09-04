@@ -2,6 +2,7 @@
 /dist
 /out-tsc
 /build
+/.angular 
 
 # Angular and npm related
 /node_modules
@@ -9,3 +10,4 @@
 /package-lock.json
 /yarn.lock
 
+DS_store
