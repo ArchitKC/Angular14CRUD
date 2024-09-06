@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>User Login</mat-card-title>
+    <mat-card-content class="align:center">
+        <form #myLoginForm="ngForm" (submit)="userLogin(myLoginForm)">
+            <mat-form-field>
+                <mat-label>User Name</mat-label>
+                <input matInput placeholder="User Name" name="email" ngModel required="">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" type="password" name="password" ngModel required="">
+            </mat-form-field>  
+            <button mat-raised-button type="submit" color="primary">Login</button>
+            <a mat-raised-button style="margin:10px" color="accent" (click)="redirectRegister()">Register</a>
+        </form>
+    </mat-card-content>    
+</mat-card>
