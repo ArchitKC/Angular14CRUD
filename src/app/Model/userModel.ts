@@ -5,3 +5,9 @@ export interface userModel{
     last_name: string,
     avatar: string
 }
+
+export interface productsModel{
+    name: string,
+    price: Number,
+    quantity: Number
+}

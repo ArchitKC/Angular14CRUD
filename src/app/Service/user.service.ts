@@ -11,6 +11,7 @@ import { userModel } from '../Model/userModel';
 export class UserService {
 
   httpUrl = 'https://reqres.in';
+  newHttpUrl = 'http://localhost:3000/';
   constructor(private httpClient: HttpClient ) { }
 
   userLogin(inputData:any){
@@ -49,5 +50,13 @@ export class UserService {
         return of([] as userModel[]);
       })
     );
+  }
+
+  getUser2(){
+    return this.httpClient.get(this.httpUrl+'/api/users?page=2')
+  }
+
+  getProduct(){
+    return this.httpClient.get(this.newHttpUrl + 'products')
   }
 }
